@@ -1,0 +1,19 @@
+$background: $gray-100;
+$background-topbar: $primary-500;
+$card-background: white;
+
+
+//Dark text
+$text-dark: rgba(0,0,0, 0.87);
+$secondary-dark: rgba(0,0,0, 0.54);
+$disabled-dark: rgba(0,0,0, 0.38);
+$dividers-dark: rgba(0,0,0, 0.12);
+
+//Light text
+$text-light: rgba(255,255,255, 1);
+$secondary-light: rgba(255,255,255, .7);
+$disabled-light: rgba(255,255,255, .3);
+$dividers-light: rgba(255,255,255, .12);
+
+$shadow-card: rgba(0,0,0, 0.2);
+$shadow-topbar: rgba(0,0,0, 0.5);

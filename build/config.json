@@ -1,0 +1,41 @@
+{
+  "app": {
+    "resources": "src/resources/**/*.*",
+    "js": [
+      "src/**/*.module.js",
+      "src/**/*.service.js",
+      "src/**/*.js"
+    ],
+    "css": [
+      "src/colors.scss",
+      "src/variables.scss",
+      "src/main.scss",
+      "src/**/*.scss"
+    ],
+    "html": [
+      "src/**/*.html"
+    ],
+    "resources": "src/resources/**/*.*",
+    "templateName": "teatime.templates"
+  },
+  "vendor": {
+    "libs": {
+      "js": ["libs/**/*.js"],
+      "css": ["libs/**/*.css"]
+    },
+    "fonts": [
+      "bower_components/font-awesome/fonts/**/*"
+    ],
+    "order": [
+      "angular/**/*",
+      "angular-*/**/*"
+    ]
+  },
+  "dest": {
+    "base": "public",
+    "prefix": "teatime",
+    "vendorPrefix": "vendor",
+    "appPrefix": "app"
+  }
+
+}

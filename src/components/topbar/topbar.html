@@ -1,0 +1,20 @@
+<div class="topbar__scope">
+    <div class="topbar">
+        <div class="topbar__left">
+            <input type="text" class="topbar__input" placeholder="Search..."/>
+        </div>
+
+        <ul class="topbar__nav topbar__center" ng-init="item = 1">
+            <li class="nav__item" ng-click="item = 1" ng-class="{'nav__item--active': item == 1}">PS4</li>
+            <li class="nav__item" ng-click="item = 2" ng-class="{'nav__item--active': item == 2}">Xbox One</li>
+            <li class="nav__item" ng-click="item = 3" ng-class="{'nav__item--active': item == 3}">PC</li>
+            <li class="nav__item" ng-click="item = 4" ng-class="{'nav__item--active': item == 4}">Wii U</li>
+        </ul>
+
+        <div class="topbar__right">
+            <ul class="topbar__nav">
+                <li class="nav__item"><a ng-click="vm.showLoginForm()"><i class="fa fa-user"></i> Sign In</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700);
+
+html,body {
+  margin: 0;
+  background: $background;
+  font-family: 'Roboto', sans-serif;
+  color: $text-light;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+[ng-click] {
+  cursor: pointer;
+}
+
+.main-content {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+}
+
+.card-list {
+  .card {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+.card {
+  display: flex;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease-in-out;
+  width: 100%;
+  background: $card-background;
+  box-shadow: 0 1px 2px 1px $shadow-card;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  font-size: 0;
+
+  &--thumb {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  &--media {
+    flex-direction: column;
+  }
+
+  &--active {
+    box-shadow: 0 4px 8px 1px $shadow-card;
+  }
+
+  &__thumbnail {
+    margin: auto 0;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__media {
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 450px;
+    }
+  }
+
+  &__title {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 24px 16px 16px;
+
+    h1 {
+      font-size: 24px;
+      color: $text-dark;
+    }
+
+    p {
+      font-size: 14px;
+      color: $secondary-dark;
+    }
+  }
+
+  &__action {
+    margin: 8px;
+  }
+
+  &__content {
+    color: $text-dark;
+    font-size: 14px;
+    padding: 16px 16px 24px;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
